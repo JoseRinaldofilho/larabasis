@@ -13,17 +13,21 @@ use Illuminate\Support\Facades\Route;
 | get post put delete patch options
 */
 
-Route::get('/', function () {
-    return  'ola bem vindo ';
-});
+Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal']);
+Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class, 'index']);
+Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'index']);
 
-Route::get('/sobre-nos', function () {
-    return  'sobre nos';
-});
+//Route::get('/', function () {
+//    return  'ola bem vindo ';
+//});
 
-Route::get('/contato', function () {
-    return  'contato';
-});
+//Route::get('/sobre-nos', function () {
+//    return  'sobre nos';
+//});
+//
+//Route::get('/contato', function () {
+//    return  'contato';
+//});
 
 
 
