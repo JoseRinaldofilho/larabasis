@@ -18,16 +18,7 @@ Route::get('/sobre-nos', [\App\Http\Controllers\SobreNosController::class, 'inde
 Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'index']);
 
 //Route::get('/', function () {
-//    return  'ola bem vindo ';
-//});
 
-//Route::get('/sobre-nos', function () {
-//    return  'sobre nos';
-//});
-//
-//Route::get('/contato', function () {
-//    return  'contato';
-//});
 
 
 
